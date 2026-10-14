@@ -69,41 +69,19 @@ export default function Home() {
 
       <main className="flex-grow pt-20">
         {/* Hero Section */}
-        <section className="relative h-[85vh] min-h-[600px] flex items-center justify-center">
-          <Image
-            src="/hero.jpg"
-            alt="Beautiful travel destination with hot air balloons"
-            fill
-            className="object-cover absolute inset-0 z-0"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0d47a1]/40 via-[#0d47a1]/10 to-transparent z-10"></div>
-
-          <div className="relative z-20 text-center px-4 max-w-4xl mx-auto mt-12">
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg leading-tight">
-              Different mindset <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary from-70% to-accent drop-shadow-sm">A different version</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-100 mb-10 max-w-2xl mx-auto drop-shadow-md font-light">
-              We don't just plan trips; we craft unforgettable experiences.
-              Discover the world with expert guidance and premium service.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#contact"
-                className="btn-accent text-lg px-8 py-4 flex items-center justify-center gap-2 group"
-              >
-                <Plane className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                Plan Your Trip
-              </a>
-              <a
-                href="#services"
-                className="bg-white/10 backdrop-blur-md border border-white/30 text-white font-medium px-8 py-4 rounded-lg hover:bg-white/20 transition-all text-lg flex items-center justify-center"
-              >
-                Explore Services
-              </a>
-            </div>
-          </div>
+        <section className="relative h-[85vh] min-h-[500px] w-full flex items-center justify-center overflow-hidden bg-black">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            className="w-full h-full object-cover"
+          >
+            <source src="/tourism_landing_page_video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <h1 className="sr-only">Incel Tourism - Curated Travel Experiences & Luxury Tours</h1>
         </section>
 
         {/* Trust/Accreditation Section */}
